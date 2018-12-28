@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 网页页面字符集 -->
+    <meta charset="UTF-8">
+    <!-- 让IE使用最新的渲染模式 -->
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <!-- 针对移动设备，网站显示宽度等于设备屏幕显示宽度，内容缩放比例为1:1，maximum-scale=1.0,minimum-scale=1.0,user-scalable=no -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 将下面的标签加入的页面中，可以让部分国产浏览器默认采用高速模式渲染页面 -->
+    <meta name="render" content="webkit">
+    <!-- 以上标签必须放在最前面，其他内容必须紧跟其后 -->
+    <title>table表头固定</title>
+    <!-- Bootstrap，本页面暂时没用到 -->
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <!--<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">-->
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <!--<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">-->
+    <!-- IE9以下浏览器支持响应式和Html5标签,线上CDN引用，BootstrapCDN -->
+    <!-- [if lt IE 9] -->
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <!-- [endif] -->
+    <!-- 前端css和js的引入位置，https://blog.csdn.net/fragrant_no1/article/details/78222915 -->
+    <style>
+        table tbody {
+            display:block;
+            height:100px;
+            overflow-y:scroll;
+        }
+        table thead, table tbody tr {
+            display:table;
+            width: 100%;
+            table-layout:fixed;
+            text-align:center;
+        }
+        table thead {
+            width:calc(100% - 1em);
+        }
+    </style>
+</head>
+<body>
+    <!-- 表头固定css样式，https://blog.csdn.net/zhengyinling/article/details/78983144 -->
+    <div style="width:800px;">
+        <div class="table-head">
+            <table align="center">
+                <thead>
+                    <tr>
+                        <th>序号</th>
+                        <th>内容</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>测试1</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>测试2</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>测试3</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>测试4</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>测试5</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>测试6</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <!--<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>-->
+    <!--&lt;!&ndash; 最新的 Bootstrap 核心 JavaScript 文件 &ndash;&gt;-->
+    <!--<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>-->
+</body>
+</html>
