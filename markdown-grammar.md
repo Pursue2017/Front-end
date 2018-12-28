@@ -24,12 +24,12 @@
 * * * * *
 
 
-![图片alt](图片地址 ''图片title'')
+
 ![blockchain](https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=702257389,1274025419&fm=27&gp=0.jpg "区块链")
 
 
-[超链接名](超链接地址 "超链接title")
-[简书](http://jianshu.com)
+
+[简书markdown语法参考](https://www.jianshu.com/p/191d1e21f7ed)
 
 
 
