@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <meta name="render" content="webkit">
+    <title>Title</title>
+</head>
+<body>
+    <!-- get提交表单 -->
+    <form action="http：//www.baidu.com" method="get">
+        <p>
+            <label>姓名：</label>
+            <input type="text" name="username" value="roger" readonly />
+        </p>
+        <p>
+            <label>密码：</label>
+            <input type="password" name="password" />
+        </p>
+        <p>
+            <label>性别：</label>
+            <label><input type="radio" name="gender" value="0" /> 男</label>
+            <label><input type="radio" name="gender" value="1" /> 女</label>
+        </p>
+        <p>
+            <label>爱好：</label>
+            <label><input type="checkbox" name="like" value="sing" /> 唱歌</label>
+            <label><input type="checkbox" name="like" value="run" /> 跑步</label>
+            <label><input type="checkbox" name="like" value="swiming" /> 游泳</label>
+        </p>
+        <p>
+            <label>照片：</label>
+            <input type="file" name="person_pic">
+        </p>
+        <p>
+            <label>个人描述：</label>
+            <textarea name="about"></textarea>
+        </p>
+        <p>
+            <label>籍贯：</label>
+            <select name="site">
+                <option value="0">北京</option>
+                <option value="1">上海</option>
+                <option value="2">广州</option>
+                <option value="3">深圳</option>
+            </select>
+        </p>
+        <p>
+            <input type="submit" name="" value="提交">
+            <input type="reset" name="" value="重置" disabled>
+        </p>
+    </form>
+    <!-- post提交表单 -->
+    <form>
+        <!-- 有file表单用multipart/form-data，默认application/x-www-form-urlencoded -->
+        <form action="./05-form.php" method="post" enctype="multipart/form-data">
+
+            <label>用户名：</label>
+            <input type="text" name="uname"  value="" placeholder="请输入用户名"maxlength="6" style="width：100px;" autofocus/><br/>
+
+            <label>密  码：</label>
+            <input type="password" name="pass"><br/>
+
+            <label>确认密码：</label>
+            <input type="password"/><br/>
+
+            <label> 性别：</label>
+            <label><input type="radio" name="sex" value="m" checked/>男</label>
+            <label><input type="radio" name="sex" value="w"/>女<br/></label>
+
+            <!-- 提供提交过去的value值 -->
+            <label>爱好：</label>
+            <label><input type="checkbox" name="check[]" value="lan"/>篮球</label>
+            <label><input type="checkbox" name="check[]"value="zu"/>足球</label>
+            <label><input type="checkbox" name="check[]" value="ping" checked/>乒乓球</label>
+            <label><input type="checkbox" name="check[]"value="yu"/>羽毛球</label><br/>
+
+            <label> 文件上传：</label>
+            <input type="file" name="pic"/><br/>
+
+            <label>籍贯：</label>
+            <select name="city">
+            <option value="hb">河北</option>
+            <option value="bj">北京</option>
+            <option value="sd" selected>山东</option>
+            <option value="hn" disabled>河南</option>
+            </select><br/>
+
+            <label>内容：</label>
+            <textarea name="areas" style="resize：none;" rows="5" cols="40">
+             </textarea><br/>
+
+            <!-- submit提交所有，button绑定事件提交 -->
+            <input type="submit" value="注册"/>
+            <input type="button" value="按钮"/>
+            <input type="image" src="./post.png" width="40" height="18"/>
+            <button>点击按钮</button>
+            <input type="reset" value="重置"/>
+
+            <label>隐藏域：</label>
+            <input type="hidden" name="id" value="100"/>
+        </form>
+</body>
+</html>
