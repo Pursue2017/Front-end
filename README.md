@@ -1,5 +1,5 @@
-# Html
-codes about html、css、js
+# Front-end
+codes about Front-end
 
 basic tools: chrome、idea、photoshop
 
