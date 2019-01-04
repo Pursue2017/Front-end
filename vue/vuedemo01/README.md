@@ -48,6 +48,21 @@ css公用样式可以写在父组件中，不写scoped
 
 a标签的href也能使用路由  detail/analysis
 
+lodash库
+
+$event,原生dom事件以及event.target.value 
+
+插头
+
+vue-date-picker
+
+watch和query
+
+vuex
+
+
+
+
 
 
 
