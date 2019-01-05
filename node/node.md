@@ -32,8 +32,8 @@ fs.mkdir(path, callback)
 
 通过http模块创建一个简单的http服务程序
 ```
-var http = require('http');
-var server = http.creatServer();
+var 01_http = require('01_http');
+var server = 01_http.creatServer();
 server.on('request', function(req, res) {
 res.write('hello world');
 res.end();
@@ -50,7 +50,7 @@ res.write('Hello <h1>World</h1>!!你好世界');
 根据不同请求做出不同响应
 req.url获取用户请求的路径
 ```
-http.createServer(function(req, res){
+01_http.createServer(function(req, res){
 
 }).listen(8080, function(){})
 ```
@@ -61,7 +61,7 @@ mime模块	mime.getType('txt')	getExtension('text/plain')
 
 request、response对象常用属性	httpIncomingMessage、ServerResponse
 
-request.headers(rawHeaders, httpVersion, method, url)
+request.headers(rawHeaders, httpVersion, method, 02_url)
 
 response.statusCode(statusMessage, writeHead, setHeader)
 
@@ -73,7 +73,7 @@ Modules和Packages的区别		包有一个package.json文件（包描述文件）
 
 url模块的parse方法   
 ```
-url.parse(urlString[,parseQueryString[,slashesDeonteHost]])     urlObj
+02_url.parse(urlString[,parseQueryString[,slashesDeonteHost]])     urlObj
 Href:	protocol(protocol)	auth(username, password)		host(hostname, port)	
 Path(pathname, search)		hash(hash)
 ```
@@ -91,7 +91,7 @@ console.log(html);
 
 require加载是同步的，多个require依次加载
 
-Nodejs中模块的分类（核心（fs, http, path, url）、文件（.js, .json, .node依次加载）、第三方（mime, cheerio, moment, mongo））
+Nodejs中模块的分类（核心（fs, 01_http, path, 02_url）、文件（.js, .json, .node依次加载）、第三方（mime, cheerio, moment, mongo））
 
 require加载模块原理（被加载的模块会先执行一次）
 
@@ -132,7 +132,7 @@ app.use('/xxx', express.static(path.join(__dirname, 'public')));
 ```
 res对象常用的方法	json、send、redirect、sendFile
 
-[express路由](http://expressjs.com/zh-cn/guide/routing.html)
+[express路由](01_http://expressjs.com/zh-cn/guide/routing.html)
 
 ejs模板		安装和引入
 ```
