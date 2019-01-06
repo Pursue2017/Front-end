@@ -3,6 +3,8 @@
 链接：https://juejin.im/post/5c1f8e52f265da6170071e43
 来源：掘金
 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+[原作者github地址](https://github.com/LiangJunrong/Node)
+
 
 本项目旨在练习node的相关代码
 
@@ -25,6 +27,8 @@
 9.非阻塞I/O事件驱动
 
 10.get与post
+
+11.node连接mysql
 
 
 
